@@ -151,3 +151,6 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 OPENAI_API_KEY = config('OPENAI_API_KEY')
 EMBEDDING_MODEL = config('EMBEDDING_MODEL')
+
+# Pinecone
+PINECONE_API_KEY = config('PINECONE_API_KEY')

@@ -17,11 +17,18 @@ ALLOWED_HOSTS = ['127.0.0.1', 'localhost',
 
 DATABASES = {
     'default': {
-        'ENGINE': config('ENGINE'),
-        'NAME': config('NAME'),
-        'USER': config('USER'),
-        'PASSWORD': config('PASSWORD'),
-        'HOST': config('HOST'),
-        'PORT': config('PORT'),
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': BASE_DIR / 'db.sqlite3',
     }
 }
+
+# DATABASES = {
+#    'default': {
+#        'ENGINE': config('ENGINE'),
+#        'NAME': config('NAME'),
+#        'USER': config('USER'),
+#        'PASSWORD': config('PASSWORD'),
+#        'HOST': config('HOST'),
+#        'PORT': config('PORT'),
+#    }
+# }

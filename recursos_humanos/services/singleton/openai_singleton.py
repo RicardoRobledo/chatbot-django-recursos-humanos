@@ -18,7 +18,7 @@ class OpenAISingleton():
         This method create our client
         """
 
-        client = ChatOpenAI(api_key=settings.OPENAI_API_KEY,)
+        client = ChatOpenAI(api_key=settings.OPENAI_API_KEY, model='gpt-4o-mini')
 
         return client
 
